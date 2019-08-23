@@ -1,1 +1,1 @@
-alert("React book");
+console.log('React book');
