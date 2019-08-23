@@ -22,6 +22,14 @@
       "error",
       { "extensions": [".js", ".jsx"] }
     ],
-    "import/prefere-default-export": "off"
+    "global-require": "off",
+    "import/prefere-default-export": "off",
+    "react/prefer-stateless-function": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePatter": "^_"
+      }
+    ]
   }
 }
