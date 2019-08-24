@@ -1,0 +1,9 @@
+@import "base/index";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: $blue-lighter;
+  font-family: $font-family-base;
+}

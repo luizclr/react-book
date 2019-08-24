@@ -1,0 +1,17 @@
+@import "../base/index";
+
+$header-height: 50px;
+
+.header {
+  background-color: $blue;
+  height: $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: $white;
+    margin: 0;
+    font-size: $font-size-base;
+  }
+}
