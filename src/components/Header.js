@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../style/Header.scss';
+import '../../style/components/Header.scss';
 
 const Header = ({ title }) => (
   <div className="header">
