@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 import Header from './components/Header';
 
-import './index.scss';
+import './style/index.scss';
 
 class App extends Component {
   render() {
