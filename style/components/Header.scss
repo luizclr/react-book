@@ -1,8 +1,10 @@
-@import "../base/colors";
+@import "../base/index";
+
+$header-height: 50px;
 
 .header {
   background-color: $blue;
-  height: 50px;
+  height: $header-height;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +12,6 @@
   h1 {
     color: $white;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: $font-size-base;
   }
 }
