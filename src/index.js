@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import Header from './components/Header';
+
 import './index.scss';
 
 class App extends Component {
   render() {
-    return <h1>React book</h1>;
+    return (
+      <div>
+        <Header title="React book" />
+      </div>
+    );
   }
 }
 
