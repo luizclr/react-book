@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import DataTemplate from '../templates/data';
+
 import Header from './components/header/Header';
 import Post from './components/post/Post';
 import Container from './components/base/Conteiner';
@@ -13,7 +15,13 @@ class App extends Component {
       <div>
         <Header title="React book" />
         <Container>
-          <Post />
+          <ul>
+            {DataTemplate.map((post) => (
+              <li>
+                <Post post={post} key={post.id} />
+              </li>
+            ))}
+          </ul>
         </Container>
       </div>
     );
