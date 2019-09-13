@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import Header from './components/Header';
+import DataTemplate from '../templates/data';
+
+import Header from './components/header/Header';
+import Post from './components/post/Post';
 import Container from './components/base/Conteiner';
 
-import '../style/index.scss';
+import './style/index.scss';
 
 class App extends Component {
   render() {
@@ -12,7 +15,13 @@ class App extends Component {
       <div>
         <Header title="React book" />
         <Container>
-          <p>hello</p>
+          <ul>
+            {DataTemplate.map((post) => (
+              <li>
+                <Post post={post} key={post.id} />
+              </li>
+            ))}
+          </ul>
         </Container>
       </div>
     );

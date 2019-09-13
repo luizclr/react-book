@@ -1,0 +1,35 @@
+@import "../base/index.scss";
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $gray-lighter;
+  padding-bottom: $font-size-base;
+
+  .img-box {
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .info-box {
+    padding-left: $font-size-base;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    * {
+      margin: 0;
+    }
+
+    p {
+      line-height: $font-size-base * 1.5;
+      font-weight: bold;
+    }
+
+    span {
+      color: $gray-light;
+    }
+  }
+}

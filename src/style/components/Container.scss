@@ -1,0 +1,33 @@
+@import "../base/index";
+
+.container {
+  padding: $font-size-base;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-top: $font-size-base;
+    }
+  }
+
+  @media screen and (min-width: $grid-width-sm) {
+    max-width: $container-width-on-xs;
+  }
+
+  @media screen and (min-width: $grid-width-md) {
+    max-width: $container-width-on-sm;
+  }
+
+  @media screen and (min-width: $grid-width-lg) {
+    max-width: $container-width-on-md;
+  }
+
+  @media screen and (min-width: $grid-width-xl) {
+    max-width: $container-width-on-lg;
+  }
+}
