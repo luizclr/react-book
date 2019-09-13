@@ -17,8 +17,8 @@ class App extends Component {
         <Container>
           <ul>
             {DataTemplate.map((post) => (
-              <li>
-                <Post post={post} key={post.id} />
+              <li key={post.id}>
+                <Post post={post} />
               </li>
             ))}
           </ul>
