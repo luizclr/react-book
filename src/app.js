@@ -12,10 +12,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header title="React book" />
+        <Header title="Reactbook" />
         <Container>
           <ul>
-            {DataTemplate.map((post) => (
+            {DataTemplate.map(post => (
               <li key={post.id}>
                 <Post post={post} />
               </li>

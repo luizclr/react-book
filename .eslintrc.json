@@ -37,6 +37,7 @@
       {
         "devDependencies": true
       }
-    ]
+    ],
+    "arrow-parens": ["error", "as-needed"]
   }
 }
