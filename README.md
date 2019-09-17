@@ -2,7 +2,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/386f3b8d-5235-42c3-9f6c-1251b40af9b6/deploy-status)](https://app.netlify.com/sites/react-book/deploys)
 
-# 📚 React book
+# 💻 Reactbook
 
 This project is based on the first challenge of **GoReact**, a [Rocketseat](https://rocketseat.com.br/) bootcamp.
 
@@ -17,6 +17,19 @@ This project is based on the first challenge of **GoReact**, a [Rocketseat](http
 ```bash
 # Install packages
 yarn install
+```
+
+#### Run local API
+
+```bash
+yarn run fake-backend
+```
+
+Server will start on [localhost:3000](http://localhost:3000).
+
+#### Run aplication
+
+```bash
 # Start server locally
 yarn start
 ```
@@ -28,6 +41,17 @@ Server will be opened automatically on [localhost:8080](http://localhost:8080).
 ```bash
 # Linter
 yarn run lint
+```
+
+### Testing
+
+```bash
+# run teste
+yarn run test
+# test coverage
+yarn run test:coverage
+# watch changes
+yarn run test:watch
 ```
 
 ### Build

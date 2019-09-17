@@ -1,3 +1,8 @@
 /node_modules
 /public
+
+# fake backend
 /__fake-backend__/db.json
+
+# tests
+/coverage

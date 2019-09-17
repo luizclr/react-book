@@ -7,6 +7,9 @@
     "start": "webpack-dev-server --config webpack/webpack.dev --open --hot",
     "lint": "eslint ./src",
     "build": "webpack --config webpack/webpack.prod -p",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "fake-backend": "node __fake-backend__/server.js"
   },
   "repository": {
@@ -52,6 +55,7 @@
     "prettier-eslint": "^9.0.0",
     "react-test-renderer": "^16.9.0",
     "sass-loader": "^7.3.1",
+    "sinon": "^7.4.2",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.20.2",
