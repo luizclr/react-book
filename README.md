@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/luizclr/react-book.svg?branch=master)](https://travis-ci.org/luizclr/react-book)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/386f3b8d-5235-42c3-9f6c-1251b40af9b6/deploy-status)](https://app.netlify.com/sites/react-book/deploys)
-
 [![Coverage Status](https://coveralls.io/repos/github/luizclr/react-book/badge.svg?branch=master)](https://coveralls.io/github/luizclr/react-book?branch=master)
 
 # 💻 Reactbook
