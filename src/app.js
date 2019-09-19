@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
+import store from './store';
 
 import DataTemplate from '../templates/data';
 
@@ -11,7 +14,7 @@ import './style/index.scss';
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <Provider store={store}>
         <Header title="Reactbook" />
         <Container>
           <ul>
@@ -22,7 +25,7 @@ export default class App extends Component {
             ))}
           </ul>
         </Container>
-      </div>
+      </Provider>
     );
   }
 }
