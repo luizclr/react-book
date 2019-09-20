@@ -1,5 +1,8 @@
+/* eslint-disable no-underscore-dangle */
 import { createStore } from 'redux';
 
-const store = createStore(() => {});
+import reducers from './reducers';
+
+const store = createStore(reducers);
 
 export default store;
