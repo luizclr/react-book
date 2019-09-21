@@ -4,21 +4,12 @@ import PropTypes from 'prop-types';
 
 import POST_ACTIONS from '../../constants/posts';
 
+import PostForm from '../postForm/postForm';
 import Post from '../post/Post';
 
 const PostList = ({ posts, addPost }) => (
   <>
-    <button
-      type="button"
-      onClick={() => addPost({
-        id: `id${Math.random()}`,
-        name: 'maria',
-        picture: '',
-        about: 'hello',
-      })}
-    >
-      add post
-    </button>
+    <PostForm addPost={addPost} />
     <ul>
       {posts.map(post => (
         <li key={post.id}>

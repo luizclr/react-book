@@ -38,6 +38,7 @@
         "devDependencies": true
       }
     ],
-    "arrow-parens": ["error", "as-needed"]
+    "arrow-parens": ["error", "as-needed"],
+    "react/state-in-constructor": [0, "never"]
   }
 }
