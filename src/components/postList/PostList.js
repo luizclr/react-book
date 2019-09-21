@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
-import PostActions from '../../store/actions/posts';
+import * as PostActions from '../../store/actions/posts';
 
 import PostForm from '../postForm/postForm';
 import Post from '../post/Post';
 
-const PostList = ({ posts, addPost }) => (
+const PostList = ({ posts, addPostRequest }) => (
   <>
-    <PostForm addPost={addPost} />
+    <PostForm addPost={addPostRequest} />
     <ul>
       {posts.map(post => (
         <li key={post.id}>
@@ -30,7 +30,7 @@ PostList.propTypes = {
       picture: PropTypes.string.isRequired,
     }),
   ).isRequired,
-  addPost: PropTypes.func.isRequired,
+  addPostRequest: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

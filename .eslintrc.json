@@ -39,6 +39,7 @@
       }
     ],
     "arrow-parens": ["error", "as-needed"],
-    "react/state-in-constructor": [0, "never"]
+    "react/state-in-constructor": [0, "never"],
+    "import/prefer-default-export": "off"
   }
 }
