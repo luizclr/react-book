@@ -1,5 +1,10 @@
-const POSTS_ACTIONS = {
-  ADD_POST: 'add-post',
-};
+import POST_ACTIONS from '../../constants/posts';
 
-export default POSTS_ACTIONS;
+const addPost = post => ({
+  type: POST_ACTIONS.ADD_POST,
+  payload: post,
+});
+
+export default {
+  addPost,
+};

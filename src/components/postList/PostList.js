@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
-import POST_ACTIONS from '../../constants/posts';
+import PostActions from '../../store/actions/posts';
 
 import PostForm from '../postForm/postForm';
 import Post from '../post/Post';
@@ -36,9 +37,7 @@ const mapStateToProps = state => ({
   posts: state.posts,
 });
 
-const mapDispatchToProps = dispatch => ({
-  addPost: post => dispatch({ type: POST_ACTIONS.ADD_POST, payload: post }),
-});
+const mapDispatchToProps = dispatch => bindActionCreators(PostActions, dispatch);
 
 export default connect(
   mapStateToProps,
