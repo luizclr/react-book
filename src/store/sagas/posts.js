@@ -3,7 +3,7 @@ import api from '../../services/api';
 
 import { getPostSuccess } from '../actions/posts';
 
-export function* getPost(action) {
+export function* getPost() {
   const { data } = yield call(api.get, '/posts/');
 
   yield put(getPostSuccess(data));
