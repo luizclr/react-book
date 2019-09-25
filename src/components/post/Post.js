@@ -16,7 +16,7 @@ const Post = ({ post: { name, about, picture } }) => (
 
 Post.propTypes = {
   post: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     about: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     picture: PropTypes.string.isRequired,

@@ -23,7 +23,6 @@ class PostForm extends Component {
     e.preventDefault();
 
     addPost({
-      id: `id${Math.random()}`,
       picture: 'https://picsum.photos/60/60',
       ...this.state,
     });
