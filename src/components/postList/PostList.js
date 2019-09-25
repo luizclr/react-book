@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 
-import * as PostActions from '../../store/actions/posts';
+import { Creators as PostActions } from '../../store/ducks/posts';
 
 import PostForm from '../postForm/postForm';
 import Post from '../post/Post';

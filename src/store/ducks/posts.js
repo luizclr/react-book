@@ -7,6 +7,9 @@ const INITIAL_STATE = {
   data: [],
 };
 
+/**
+ * REDUCER
+ */
 export default function posts(state = INITIAL_STATE, action) {
   switch (action.type) {
     /**
@@ -45,3 +48,35 @@ export default function posts(state = INITIAL_STATE, action) {
       return state;
   }
 }
+
+/**
+ * ACTIONS
+ */
+export const Creators = {
+  // GET POSTS
+  getPostsRequest: () => ({
+    type: POST_ACTIONS.GET_POSTS_REQUEST,
+  }),
+  getPostsSuccess: data => ({
+    type: POST_ACTIONS.GET_POSTS_SUCCESS,
+    payload: { data },
+  }),
+  getPostsError: data => ({
+    type: POST_ACTIONS.GET_POSTS_ERROR,
+    payload: { data },
+  }),
+
+  // ADD POST
+  addPostRequest: post => ({
+    type: POST_ACTIONS.ADD_POST_REQUEST,
+    payload: post,
+  }),
+  addPostSuccess: data => ({
+    type: POST_ACTIONS.ADD_POST_SUCCESS,
+    payload: { data },
+  }),
+  addPostError: data => ({
+    type: POST_ACTIONS.ADD_POST_ERROR,
+    payload: { data },
+  }),
+};
