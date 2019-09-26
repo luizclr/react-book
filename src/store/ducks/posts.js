@@ -34,6 +34,7 @@ export default function posts(state = INITIAL_STATE, action) {
       return { ...state, loading: true, error: '' };
     case POST_ACTIONS.ADD_POST_SUCCESS:
       return {
+        ...state,
         loading: false,
         data: [...state.data, action.payload.data],
         loaded: true,
