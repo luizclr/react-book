@@ -12,6 +12,7 @@ module.exports = {
     filename: '[name].js',
   },
   plugins: [
+    ...common.plugins,
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', 'templates', 'index.ejs'),
       filename: 'index.html',
