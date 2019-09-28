@@ -15,6 +15,7 @@ module.exports = {
     chunkFilename: '[name].[chunkhash].js',
   },
   plugins: [
+    ...common.plugins,
     new CleanWebpackPlugin({
       verbose: true,
     }),
