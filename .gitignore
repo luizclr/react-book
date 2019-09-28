@@ -1,5 +1,6 @@
 /node_modules
 /public
+.env
 
 # fake backend
 /__fake-backend__/db.json
