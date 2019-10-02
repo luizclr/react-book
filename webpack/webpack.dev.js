@@ -24,7 +24,6 @@ module.exports = {
       minimize: true,
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: '"development"' } }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new UglifyJsPlugin(),
   ],
