@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.dev --open --hot",
     "lint": "eslint ./",
-    "build": "npx webpack@4.20.2 --config webpack/webpack.prod -p",
+    "build": "webpack --config webpack/webpack.prod -p",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -33,7 +33,9 @@
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
-    "redux-saga": "^1.1.1"
+    "redux-saga": "^1.1.1",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -71,8 +73,6 @@
     "sinon": "^7.4.2",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.8.0"
   },
   "pre-commit": {
