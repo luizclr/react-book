@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.dev --open --hot",
     "lint": "eslint ./",
-    "build": "node_modules/.bin/webpack --config webpack/webpack.prod -p",
+    "build": "npx webpack@4.20.2 --config webpack/webpack.prod -p",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
