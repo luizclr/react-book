@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.dev --open --hot",
     "lint": "eslint ./",
-    "build": "npx webpack-cli@3.3.9 --config webpack/webpack.prod -p",
+    "build": "webpack --config webpack/webpack.prod -p",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -75,6 +75,7 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.0"
   },
+  "proxy": "http://localhost:3000",
   "pre-commit": {
     "run": [
       "lint"
