@@ -1,26 +1,70 @@
-[![Build Status](https://travis-ci.org/luizclr/react-book.svg?branch=master)](https://travis-ci.org/luizclr/react-book)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/386f3b8d-5235-42c3-9f6c-1251b40af9b6/deploy-status)](https://app.netlify.com/sites/react-book/deploys)
-[![Coverage Status](https://coveralls.io/repos/github/luizclr/react-book/badge.svg?branch=master)](https://coveralls.io/github/luizclr/react-book?branch=master)
+<h1 align="center">
+  <a href="https://react-book.netlify.com">
+    reactbook
+  </a>
+</h1>
 
-# 💻 Reactbook
+<img
+  src="static/screens.jpg"
+  style="display: block; margin: 0 auto;"
+/>
 
-This project is based on the first challenge of **GoReact**, a [Rocketseat](https://rocketseat.com.br/) bootcamp.
-
-🌐 [react-book.netlify.com](https://react-book.netlify.com)
+<p align="center">
+  <a href="https://travis-ci.org/luizclr/react-book">
+    <img
+      src="https://travis-ci.org/luizclr/react-book.svg?branch=master"
+      alt="Build Status"/>
+  </a>
+  <a href="https://github.com/prettier/prettier">
+    <img
+      src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square"
+      alt="code style: prettier"/>
+  </a>
+  <a href="https://app.netlify.com/sites/react-book/deploys">
+    <img
+      src="https://api.netlify.com/api/v1/badges/386f3b8d-5235-42c3-9f6c-1251b40af9b6/deploy-status"
+      alt="Netlify Status"/>
+  </a>
+  <a href="https://coveralls.io/github/luizclr/react-book?branch=master">
+    <img
+      src="https://coveralls.io/repos/github/luizclr/react-book/badge.svg?branch=master"
+      alt="Coverage Status"/>
+  </a>
+</p>
 
 ---
 
-## Quick Start
+<h2 align="center">🚧 work in progress...</h2>
 
-### Running
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Configs](#configs)
+- [Running](#running)
+  - [Local API](#local-api)
+  - [Application](#application)
+- [Coding style](#coding-style)
+- [Testing](#testing)
+- [Build](#build)
+- [License](#license)
+
+## Requirements
+
+- nodejs >= 10.16.3
+- yarn >= 1.9.0
+
+## Configs
+
+Copy the `db.example.json` file in `__fake-baskend__` folder and rename it to `db.json`.
+
+## Running
 
 ```bash
 # Install packages
 yarn install
 ```
 
-#### Run local API
+### Local API
 
 ```bash
 yarn run fake-backend
@@ -28,23 +72,23 @@ yarn run fake-backend
 
 Server will start on [localhost:3000](http://localhost:3000).
 
-#### Run aplication
+### Application
 
 ```bash
 # Start server locally
 yarn start
 ```
 
-Server will be opened automatically on [localhost:8080](http://localhost:8080).
+Application will be opened automatically on [localhost:8080](http://localhost:8080).
 
-### Coding style
+## Coding style
 
 ```bash
 # Linter
 yarn run lint
 ```
 
-### Testing
+## Testing
 
 ```bash
 # run teste
@@ -55,7 +99,7 @@ yarn run test:coverage
 yarn run test:watch
 ```
 
-### Build
+## Build
 
 ```bash
 # Build for production

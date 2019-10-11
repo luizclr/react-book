@@ -30,7 +30,6 @@ module.exports = {
         removeRedundantAttributes: true,
       },
     }),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: '"production"' } }),
     new webpack.HashedModuleIdsPlugin(),
     new webpack.LoaderOptionsPlugin({
       debug: false,
