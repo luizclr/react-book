@@ -1,3 +1,7 @@
+.page-wrapper {
+  display: flex;
+}
+
 .container {
   padding: $font-size-base;
   display: block;
@@ -32,5 +36,16 @@
 
 .navbar {
   background-color: red;
-  width: 200px;
+  min-width: $nav-width;
+
+  &__active-mobile {
+  }
+
+  @media screen and (max-width: $grid-width-lg) {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    height: 100%;
+    left: -$nav-width;
+  }
 }

@@ -12,7 +12,7 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <Header title="Reactbook" />
-        <div>
+        <div className="page-wrapper">
           <div className="navbar">
             <p>nav</p>
           </div>
