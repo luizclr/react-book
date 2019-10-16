@@ -5,8 +5,6 @@ import store from './store';
 
 import Header from './components/header/Header';
 import PostList from './components/postList/PostList';
-import Container from './components/base/Conteiner';
-
 import './style/index.scss';
 
 export default class App extends Component {
@@ -14,9 +12,14 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <Header title="Reactbook" />
-        <Container>
-          <PostList />
-        </Container>
+        <div>
+          <div className="navbar">
+            <p>nav</p>
+          </div>
+          <div className="container">
+            <PostList />
+          </div>
+        </div>
       </Provider>
     );
   }

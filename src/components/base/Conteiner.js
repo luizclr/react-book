@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../../style/components/Container.scss';
-
 const Container = ({ children }) => <div className="container">{children}</div>;
 
 Container.defaultProps = {

@@ -1,40 +1,66 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
       "picture": "https://picsum.photos/id/777/60/60",
-      "name": "Nita Reese",
-      "about": "Nostrud irure in ipsum labore irure elit enim sint. Qui magna anim duis tempor quis. Veniam enim Lorem quis mollit pariatur anim duis id duis exercitation adipisicing. Tempor proident commodo et cupidatat veniam amet aliqua cupidatat occaecat et laboris excepteur fugiat mollit. Ipsum quis enim anim aute anim et ex. Excepteur Lorem enim ipsum et cupidatat ea aliquip mollit minim.\r\n"
+      "name": "Nita Reese"
     },
     {
       "id": 2,
       "picture": "https://picsum.photos/id/22/60/60",
-      "name": "Fran Chaney",
-      "about": "Laboris amet anim commodo commodo Lorem anim voluptate laboris duis est ullamco do culpa sit. Fugiat ipsum veniam fugiat laborum cillum fugiat consequat pariatur consequat incididunt. Incididunt velit incididunt eu minim quis enim exercitation ad id in irure laboris est aliquip. Anim et quis aliquip qui aute labore. Occaecat non occaecat aliqua Lorem anim aute ipsum id. Enim cupidatat esse et consectetur qui voluptate aliqua laborum consequat mollit velit. Sint excepteur sit cillum dolor minim id eiusmod exercitation deserunt officia cupidatat.\r\n"
+      "name": "Fran Chaney"
     },
     {
       "id": 3,
       "picture": "https://picsum.photos/id/72/60/60",
-      "name": "Patrick Avila",
-      "about": "In in velit eu tempor culpa ea sunt sint aliquip irure esse et deserunt est. Consequat dolore enim cupidatat officia velit aliquip id mollit voluptate et ex proident. Veniam reprehenderit quis esse cupidatat occaecat amet quis ex. Nisi quis eu aliquip sit aliqua laborum elit sint id irure nostrud occaecat anim labore. Dolor in exercitation do qui velit et. Irure deserunt tempor ex id duis aliquip id dolor et.\r\n"
+      "name": "Patrick Avila"
     },
     {
       "id": 4,
       "picture": "https://picsum.photos/id/503/60/60",
-      "name": "Eddie Carson",
-      "about": "Consectetur et magna veniam esse dolor occaecat et amet exercitation non duis. Irure sit reprehenderit amet voluptate nulla dolore amet. Enim duis sunt commodo enim proident. Nisi deserunt ex sit proident qui cupidatat elit qui enim minim est reprehenderit et.\r\n"
+      "name": "Eddie Carson"
     },
     {
       "id": 5,
       "picture": "https://picsum.photos/id/476/60/60",
-      "name": "Pansy Vincent",
-      "about": "Dolore ad ad consectetur laborum duis commodo aute quis eiusmod occaecat. Dolor veniam do officia aute deserunt qui dolore officia ipsum voluptate eu ullamco aute amet. Commodo quis eu non dolor cillum eu laborum laboris. Do cupidatat dolor non reprehenderit.\r\n"
+      "name": "Pansy Vincent"
     },
     {
       "id": 6,
       "picture": "https://picsum.photos/id/511/60/60",
-      "name": "Berg Kane",
-      "about": "Ea ipsum veniam consequat deserunt laboris aute amet aute do aliqua. Sint enim dolore quis aliquip aliquip. Incididunt ea mollit ipsum consequat cillum. Veniam et minim reprehenderit exercitation ut minim cillum.\r\n"
+      "name": "Berg Kane"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "about": "Nostrud irure in ipsum labore irure elit enim sint. Qui magna anim duis tempor quis. Veniam enim Lorem quis mollit pariatur anim duis id duis exercitation adipisicing. Tempor proident commodo et cupidatat veniam amet aliqua cupidatat occaecat et laboris excepteur fugiat mollit. Ipsum quis enim anim aute anim et ex. Excepteur Lorem enim ipsum et cupidatat ea aliquip mollit minim.\r\n",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "about": "Laboris amet anim commodo commodo Lorem anim voluptate laboris duis est ullamco do culpa sit. Fugiat ipsum veniam fugiat laborum cillum fugiat consequat pariatur consequat incididunt. Incididunt velit incididunt eu minim quis enim exercitation ad id in irure laboris est aliquip. Anim et quis aliquip qui aute labore. Occaecat non occaecat aliqua Lorem anim aute ipsum id. Enim cupidatat esse et consectetur qui voluptate aliqua laborum consequat mollit velit. Sint excepteur sit cillum dolor minim id eiusmod exercitation deserunt officia cupidatat.\r\n",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "about": "In in velit eu tempor culpa ea sunt sint aliquip irure esse et deserunt est. Consequat dolore enim cupidatat officia velit aliquip id mollit voluptate et ex proident. Veniam reprehenderit quis esse cupidatat occaecat amet quis ex. Nisi quis eu aliquip sit aliqua laborum elit sint id irure nostrud occaecat anim labore. Dolor in exercitation do qui velit et. Irure deserunt tempor ex id duis aliquip id dolor et.\r\n",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "about": "Consectetur et magna veniam esse dolor occaecat et amet exercitation non duis. Irure sit reprehenderit amet voluptate nulla dolore amet. Enim duis sunt commodo enim proident. Nisi deserunt ex sit proident qui cupidatat elit qui enim minim est reprehenderit et.\r\n",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "about": "Dolore ad ad consectetur laborum duis commodo aute quis eiusmod occaecat. Dolor veniam do officia aute deserunt qui dolore officia ipsum voluptate eu ullamco aute amet. Commodo quis eu non dolor cillum eu laborum laboris. Do cupidatat dolor non reprehenderit.\r\n",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "about": "Ea ipsum veniam consequat deserunt laboris aute amet aute do aliqua. Sint enim dolore quis aliquip aliquip. Incididunt ea mollit ipsum consequat cillum. Veniam et minim reprehenderit exercitation ut minim cillum.\r\n",
+      "userId": 6
     }
   ]
 }

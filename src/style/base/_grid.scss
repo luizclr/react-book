@@ -1,10 +1,36 @@
-$grid-width-sm: 576px;
-$grid-width-md: 768px;
-$grid-width-lg: 992px;
-$grid-width-xl: 1200px;
+.container {
+  padding: $font-size-base;
+  display: block;
+  margin: 0 auto;
+  width: auto;
 
-$container-width-on-xs: auto;
-$container-width-on-sm: 540px;
-$container-width-on-md: 720px;
-$container-width-on-lg: 960px;
-$container-width-on-xl: 1140px;
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-top: $font-size-base;
+    }
+  }
+
+  @media screen and (min-width: $grid-width-sm) {
+    max-width: $container-width-on-xs;
+  }
+
+  @media screen and (min-width: $grid-width-md) {
+    max-width: $container-width-on-sm;
+  }
+
+  @media screen and (min-width: $grid-width-lg) {
+    max-width: $container-width-on-md;
+  }
+
+  @media screen and (min-width: $grid-width-xl) {
+    max-width: $container-width-on-lg;
+  }
+}
+
+.navbar {
+  background-color: red;
+  width: 200px;
+}
