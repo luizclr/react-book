@@ -24,9 +24,7 @@ class Header extends Component {
     }
   };
 
-  toggleMenu = () => {
-    console.log('toggle');
-  };
+  toggleMenu = () => {};
 
   render() {
     const { showToggleButton } = this.state;
