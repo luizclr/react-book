@@ -33,19 +33,3 @@
     max-width: $container-width-on-lg;
   }
 }
-
-.navbar {
-  background-color: red;
-  min-width: $nav-width;
-
-  &__active-mobile {
-  }
-
-  @media screen and (max-width: $grid-width-lg) {
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    height: 100%;
-    left: -$nav-width;
-  }
-}

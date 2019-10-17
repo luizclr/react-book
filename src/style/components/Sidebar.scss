@@ -1,0 +1,37 @@
+@import "../base/variables/index";
+
+.sidebar-background {
+  background-color: $translucent-black;
+  top: 0;
+
+  @media screen and (max-width: $grid-width-lg) {
+    min-width: 100%;
+    position: fixed;
+    z-index: 998;
+    height: 100vh;
+  }
+
+  &__hidden {
+    left: -100%;
+    display: none;
+  }
+}
+
+.sidebar-content {
+  display: flex;
+  background-color: $white;
+  min-width: $nav-width;
+  height: 100%;
+
+  @media screen and (max-width: $grid-width-lg) {
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    top: 0;
+  }
+
+  &__hidden {
+    left: -$nav-width;
+    display: none;
+  }
+}
