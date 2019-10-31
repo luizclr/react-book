@@ -25,7 +25,7 @@ export const Types = {
 /**
  * REDUCER
  */
-export default function user(state = INITIAL_STATE, action) {
+export default function users(state = INITIAL_STATE, action) {
   switch (action.type) {
     case Types.ADD_USER:
       return { ...state, user: action.payload.data };
@@ -53,8 +53,9 @@ export default function user(state = INITIAL_STATE, action) {
  * ACTIONS
  */
 export const Creators = {
-  addtUser: () => ({
+  addUser: user => ({
     type: Types.ADD_USER,
+    payload: user,
   }),
   removeUser: () => ({
     type: Types.REMOVE_USER,
