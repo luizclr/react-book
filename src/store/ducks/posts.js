@@ -1,12 +1,22 @@
-import POST_ACTIONS from '../../constants/posts';
-
 const INITIAL_STATE = {
   loading: false,
   loaded: false,
   error: '',
   data: [],
+  user: {},
 };
 
+/**
+ * TYPES
+ */
+
+export const Types = {
+  GET_POSTS_REQUEST: 'get-posts-request',
+  GET_POSTS_SUCCESS: 'get-posts-success',
+  GET_POSTS_ERROR: 'get-posts-error',
+  ADD_POST_REQUEST: 'add-post-request',
+  ADD_POST_SUCCESS: 'add-post-success',
+};
 /**
  * REDUCER
  */
@@ -15,31 +25,31 @@ export default function posts(state = INITIAL_STATE, action) {
     /**
      * GET POSTS
      */
-    case POST_ACTIONS.GET_POSTS_REQUEST:
+    case Types.GET_POSTS_REQUEST:
       return { ...state, loading: true, error: '' };
-    case POST_ACTIONS.GET_POSTS_SUCCESS:
+    case Types.GET_POSTS_SUCCESS:
       return {
         ...state,
         loading: false,
         data: action.payload.data,
         loaded: true,
       };
-    case POST_ACTIONS.GET_POSTS_ERROR:
+    case Types.GET_POSTS_ERROR:
       return { ...state, loading: false, error: action.payload.data };
 
     /**
      * ADD POSTS
      */
-    case POST_ACTIONS.ADD_POST_REQUEST:
+    case Types.ADD_POST_REQUEST:
       return { ...state, loading: true, error: '' };
-    case POST_ACTIONS.ADD_POST_SUCCESS:
+    case Types.ADD_POST_SUCCESS:
       return {
         ...state,
         loading: false,
         data: [...state.data, action.payload.data],
         loaded: true,
       };
-    case POST_ACTIONS.ADD_POST_ERROR:
+    case Types.ADD_POST_ERROR:
       return { ...state, loading: false, error: action.payload.data };
 
     /**
@@ -56,28 +66,28 @@ export default function posts(state = INITIAL_STATE, action) {
 export const Creators = {
   // GET POSTS
   getPostsRequest: () => ({
-    type: POST_ACTIONS.GET_POSTS_REQUEST,
+    type: Types.GET_POSTS_REQUEST,
   }),
   getPostsSuccess: data => ({
-    type: POST_ACTIONS.GET_POSTS_SUCCESS,
+    type: Types.GET_POSTS_SUCCESS,
     payload: { data },
   }),
   getPostsError: data => ({
-    type: POST_ACTIONS.GET_POSTS_ERROR,
+    type: Types.GET_POSTS_ERROR,
     payload: { data },
   }),
 
   // ADD POST
   addPostRequest: post => ({
-    type: POST_ACTIONS.ADD_POST_REQUEST,
+    type: Types.ADD_POST_REQUEST,
     payload: post,
   }),
   addPostSuccess: data => ({
-    type: POST_ACTIONS.ADD_POST_SUCCESS,
+    type: Types.ADD_POST_SUCCESS,
     payload: { data },
   }),
   addPostError: data => ({
-    type: POST_ACTIONS.ADD_POST_ERROR,
+    type: Types.ADD_POST_ERROR,
     payload: { data },
   }),
 };

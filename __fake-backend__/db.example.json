@@ -3,32 +3,38 @@
     {
       "id": 1,
       "picture": "https://picsum.photos/id/777/60/60",
-      "name": "Nita Reese"
+      "name": "Nita Reese",
+      "posts": 1
     },
     {
       "id": 2,
       "picture": "https://picsum.photos/id/22/60/60",
-      "name": "Fran Chaney"
+      "name": "Fran Chaney",
+      "posts": 1
     },
     {
       "id": 3,
       "picture": "https://picsum.photos/id/72/60/60",
-      "name": "Patrick Avila"
+      "name": "Patrick Avila",
+      "posts": 1
     },
     {
       "id": 4,
       "picture": "https://picsum.photos/id/503/60/60",
-      "name": "Eddie Carson"
+      "name": "Eddie Carson",
+      "posts": 1
     },
     {
       "id": 5,
       "picture": "https://picsum.photos/id/476/60/60",
-      "name": "Pansy Vincent"
+      "name": "Pansy Vincent",
+      "posts": 1
     },
     {
       "id": 6,
       "picture": "https://picsum.photos/id/511/60/60",
-      "name": "Berg Kane"
+      "name": "Berg Kane",
+      "posts": 1
     }
   ],
   "posts": [
