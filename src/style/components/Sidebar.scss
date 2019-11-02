@@ -19,11 +19,13 @@
 
 .sidebar-content {
   display: flex;
-  background-color: $white;
   min-width: $nav-width;
   height: 100%;
+  padding: $font-size-base 0 0 $font-size-base;
 
   @media screen and (max-width: $grid-width-lg) {
+    padding: 0;
+    background-color: $white;
     position: fixed;
     z-index: 999;
     height: 100vh;

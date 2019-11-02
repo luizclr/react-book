@@ -2,37 +2,37 @@
   "users": [
     {
       "id": 1,
-      "picture": "https://picsum.photos/id/777/100/100",
+      "picture": "https://picsum.photos/id/777",
       "name": "Nita Reese",
       "posts": 1
     },
     {
       "id": 2,
-      "picture": "https://picsum.photos/id/22/100/100",
+      "picture": "https://picsum.photos/id/22",
       "name": "Fran Chaney",
       "posts": 1
     },
     {
       "id": 3,
-      "picture": "https://picsum.photos/id/72/100/100",
+      "picture": "https://picsum.photos/id/72",
       "name": "Patrick Avila",
       "posts": 1
     },
     {
       "id": 4,
-      "picture": "https://picsum.photos/id/503/100/100",
+      "picture": "https://picsum.photos/id/503",
       "name": "Eddie Carson",
       "posts": 1
     },
     {
       "id": 5,
-      "picture": "https://picsum.photos/id/476/100/100",
+      "picture": "https://picsum.photos/id/476",
       "name": "Pansy Vincent",
       "posts": 1
     },
     {
       "id": 6,
-      "picture": "https://picsum.photos/id/511/100/100",
+      "picture": "https://picsum.photos/id/511",
       "name": "Berg Kane",
       "posts": 1
     }

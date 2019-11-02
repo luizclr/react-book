@@ -2,11 +2,12 @@ const INITIAL_STATE = {
   loading: false,
   loaded: false,
   error: '',
-  data: {
+  data: [],
+  user: {
     id: 1,
-    picture: 'https://picsum.photos/id/777/60/60',
+    picture: 'https://picsum.photos/id/777',
     name: 'Nita Reese',
-    posts: 4,
+    posts: 1,
   },
 };
 

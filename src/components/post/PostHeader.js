@@ -7,7 +7,7 @@ import '../../style/components/PostHeader.scss';
 const PostHeader = ({ picture, name }) => (
   <div className="post-header">
     <div className="img-box">
-      <img src={picture} alt={name} />
+      <img src={`${picture}/60/60`} alt={name} />
     </div>
     <div className="info-box">
       <p>{name}</p>
