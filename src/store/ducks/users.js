@@ -29,7 +29,7 @@ export const Types = {
 export default function users(state = INITIAL_STATE, action) {
   switch (action.type) {
     case Types.ADD_USER:
-      return { ...state, user: action.payload.data };
+      return { ...state, user: action.payload };
     case Types.REMOVE_USER:
       return { ...state, user: {} };
     case Types.REMOVE_USERS:
