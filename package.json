@@ -75,7 +75,6 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.0"
   },
-  "proxy": "http://localhost:3000",
   "pre-commit": {
     "run": [
       "lint"

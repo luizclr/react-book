@@ -5,8 +5,8 @@ import store from './store';
 
 import Header from './components/header/Header';
 import PostList from './components/postList/PostList';
-import Container from './components/base/Conteiner';
-
+import Profile from './components/profile/Profile';
+import Sidebar from './components/sidebar/Sidebar';
 import './style/index.scss';
 
 export default class App extends Component {
@@ -14,9 +14,14 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <Header title="Reactbook" />
-        <Container>
-          <PostList />
-        </Container>
+        <div className="page-wrapper">
+          <Sidebar>
+            <Profile />
+          </Sidebar>
+          <div className="container">
+            <PostList />
+          </div>
+        </div>
       </Provider>
     );
   }
